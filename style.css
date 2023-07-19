@@ -1,0 +1,42 @@
+*{
+    /* padding: 0; */
+    /* box-sizing: border-box; */
+}
+
+body{
+    margin: 5rem 15rem;
+}
+.cheseboard{
+    border: 2px solid black;
+    width: 600px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+.cheseboard div{
+    background: #fff;
+}
+.cheseboard div:nth-child(odd){
+    background: #000;
+}
+.cheseboard div:nth-child(2n){
+    background: #fff;
+}
+
+.cheseboard .player-1:before{
+    color: #fff;
+    content: "&#9817;";
+    font-size: 20px;
+    padding: 25px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.cheseboard .player-2:before{
+    color: #000;
+    padding: 25px;
+    content: "&#9817;";
+    font-size: 40px;
+}
